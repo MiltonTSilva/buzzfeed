@@ -1,0 +1,87 @@
+{
+  "title": "Você conhece o framework angular?",
+  "questions": [
+    {
+      "id": 1,
+      "question": "O que é Angular?",
+      "options": [
+        {
+          "id": 1,
+          "name": "Angular é um framework para construção de aplicativos web",
+          "alias": "A"
+        },
+        { "id": 2, "name": "Um banco de dados relacional", "alias": "B" },
+        { "id": 3, "name": "Um sistema operacional", "alias": "B" },
+        { "id": 4, "name": "Um software de design gráfico", "alias": "B" }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Quem mantém o desenvolvimento do Angular?",
+      "options": [
+        { "id": 1, "name": "Facebook", "alias": "B" },
+        { "id": 2, "name": "Microsoft", "alias": "B" },
+        { "id": 3, "name": "Google", "alias": "A" },
+        { "id": 4, "name": "Apple", "alias": "B" }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Qual a linguagem de programação principal usada no Angular?",
+      "options": [
+        { "id": 1, "name": "JavaScript", "alias": "B" },
+        { "id": 2, "name": "Python", "alias": "B" },
+        { "id": 3, "name": "TypeScript", "alias": "A" },
+        { "id": 4, "name": "Java", "alias": "B" }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "O que são componentes em Angular?",
+      "options": [
+        { "id": 1, "name": "São peças de hardware", "alias": "B" },
+        { "id": 2, "name": "São funcionalidades do navegador", "alias": "B" },
+        {
+          "id": 3,
+          "name": "São elementos visuais que compõem a interface de usuário",
+          "alias": "A"
+        },
+        {
+          "id": 4,
+          "name": "São unidades de armazenamento de dados",
+          "alias": "B"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "O que é um módulo em Angular?",
+      "options": [
+        {
+          "id": 1,
+          "name": "É um componente principal de uma aplicação Angular",
+          "alias": "B"
+        },
+        {
+          "id": 2,
+          "name": "É uma função JavaScript utilizada para criar elementos HTML",
+          "alias": "B"
+        },
+        {
+          "id": 3,
+          "name": "É uma biblioteca de estilos pré-definidos",
+          "alias": "B"
+        },
+        {
+          "id": 4,
+          "name": "É um conjunto de funcionalidades agrupadas, como serviços, diretivas e componentes",
+          "alias": "A"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "A": "Correta",
+    "B": "Errada"
+  }
+}

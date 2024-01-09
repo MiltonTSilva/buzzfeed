@@ -1,0 +1,44 @@
+<div class="quizz__container">
+  <h1>Quizz de Angular</h1>
+  <div class="quizz_logo">
+    <img src="assets/image/logo.png" alt="" srcset="" />
+    <h3>{{ title }}</h3>
+  </div>
+
+  <div *ngIf="!finished" class="quizz_questions">
+    <h3>{{ questionSelected.question }}</h3>
+  </div>
+
+  <div *ngIf="!finished" class="quizz_options">
+    <button
+      *ngFor="let option of questionSelected.options; let i = index"
+      (click)="playerChoose(option.alias)"
+      class="btn-option"
+    >
+      {{ option.name }}
+    </button>
+  </div>
+
+  <div *ngIf="finished" class="quizz_results">
+    <h1>
+      Sua resposta está:
+
+      <span
+        [ngClass]="{
+          quizz_results_correct: answerSelected === 'Correta',
+          quizz_results_wrong: answerSelected === 'Errada'
+        }"
+      >
+        <span> {{ answerSelected }}</span>
+      </span>
+    </h1>
+
+    <div class="home" *ngIf="questionMaxIndex === questionIndex">
+      <a href="/" class="btn-option">Home</a>
+    </div>
+
+    <div class="next" *ngIf="questionIndex < questionMaxIndex">
+      <button (click)="start()" class="btn-option">Próxima</button>
+    </div>
+  </div>
+</div>
